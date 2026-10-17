@@ -1,0 +1,20 @@
+workflows:
+  ios-compile:
+    name: Compilar ColeirasCaes
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      xcode: latest
+    scripts:
+      - name: Compilar para iPhone sem assinatura
+        script: |
+          set -euo pipefail
+          test -f ColeirasCaes/ColeirasCaesApp.swift
+          xcodebuild -project ColeirasCaes.xcodeproj -scheme ColeirasCaes -configuration Release -sdk iphoneos -destination 'generic/platform=iOS' -derivedDataPath build CODE_SIGNING_ALLOWED=NO build
+          test -s build/Build/Products/Release-iphoneos/ColeirasCaes.app/ColeirasCaes
+          mkdir -p entrega/Payload
+          cp -R build/Build/Products/Release-iphoneos/ColeirasCaes.app entrega/Payload/
+          cd entrega
+          zip -qr ColeirasCaes-sem-assinatura.ipa Payload
+    artifacts:
+      - entrega/ColeirasCaes-sem-assinatura.ipa

@@ -1,0 +1,26 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 56;
+ objects = {
+  A10000000000000000000001 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColeirasCaesApp.swift; sourceTree = "<group>"; };
+  A10000000000000000000002 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColeirasCaes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+  A10000000000000000000003 = {isa = PBXBuildFile; fileRef = A10000000000000000000001; };
+  A10000000000000000000004 = {isa = PBXGroup; children = (A10000000000000000000005, A10000000000000000000006,); sourceTree = "<group>"; };
+  A10000000000000000000005 = {isa = PBXGroup; children = (A10000000000000000000001,); path = ColeirasCaes; sourceTree = "<group>"; };
+  A10000000000000000000006 = {isa = PBXGroup; children = (A10000000000000000000002,); name = Products; sourceTree = "<group>"; };
+  A10000000000000000000007 = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 1600; TargetAttributes = {A10000000000000000000008 = {CreatedOnToolsVersion = 16.0;};};}; buildConfigurationList = A1000000000000000000000D; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base,); mainGroup = A10000000000000000000004; productRefGroup = A10000000000000000000006; projectDirPath = ""; projectRoot = ""; targets = (A10000000000000000000008,); };
+  A10000000000000000000008 = {isa = PBXNativeTarget; buildConfigurationList = A1000000000000000000000E; buildPhases = (A10000000000000000000009, A1000000000000000000000A, A1000000000000000000000B,); buildRules = (); dependencies = (); name = ColeirasCaes; productName = ColeirasCaes; productReference = A10000000000000000000002; productType = "com.apple.product-type.application"; };
+  A10000000000000000000009 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000003,); runOnlyForDeploymentPostprocessing = 0; };
+  A1000000000000000000000A = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  A1000000000000000000000B = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  A1000000000000000000000D = {isa = XCConfigurationList; buildConfigurations = (A10000000000000000000011, A10000000000000000000012,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  A1000000000000000000000E = {isa = XCConfigurationList; buildConfigurations = (A1000000000000000000000F, A10000000000000000000010,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  A1000000000000000000000F = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES; CODE_SIGNING_ALLOWED = NO; CURRENT_PROJECT_VERSION = 8; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = Coleiras; INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Recebe dados das coleiras por Bluetooth através do recetor Raspberry ou ESP32."; INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Mostra a tua posição no mapa junto das coleiras."; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.8; PRODUCT_BUNDLE_IDENTIFIER = pt.txhugos.coleiras; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; TARGETED_DEVICE_FAMILY = 1; }; name = Debug; };
+  A10000000000000000000010 = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES; CODE_SIGNING_ALLOWED = NO; CURRENT_PROJECT_VERSION = 8; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = Coleiras; INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Recebe dados das coleiras por Bluetooth através do recetor Raspberry ou ESP32."; INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Mostra a tua posição no mapa junto das coleiras."; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.8; PRODUCT_BUNDLE_IDENTIFIER = pt.txhugos.coleiras; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; TARGETED_DEVICE_FAMILY = 1; }; name = Release; };
+  A10000000000000000000011 = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_STRICT_OBJC_MSGSEND = YES; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_OPTIMIZATION_LEVEL = 0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; }; name = Debug; };
+  A10000000000000000000012 = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = YES; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_COMPILATION_MODE = wholemodule; }; name = Release; };
+ };
+ rootObject = A10000000000000000000007;
+}
